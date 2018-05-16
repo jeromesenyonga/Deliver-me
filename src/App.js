@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -8,35 +7,38 @@ class App extends Component {
       <div className='container-fluid'>
         <div className='row'>
           <div className='col-md-12'>
-            <h1 className='text-center'>Deliver Me</h1>
+            <h1 className='text-center title'>Deliver Me</h1>
           </div>
         </div>
         <div className='row'>
           <div className='col-md-4'>
-            <div className='row'>
+            <div className='row mb-3'>
               <div className='offset-md-3 col-md-9'>
-              <h4><strong>Ship It Quick</strong></h4>
+                <h4><strong>Ship It Quick</strong></h4>
+              </div>
             </div>
-          </div>
             <div className='row'>
               <div className='offset-md-1 col-md-10'>
                 <form>
                   <div className='form-group'>
-                  <input type='text' className='form-control' placeholder='Pick up location ' />
+                    <input type='text' className='form-control' placeholder='Pick up location ' />
                   </div>
                   <div className='form-group'>
-                  <input type='text' className='form-control' placeholder='End destination ' />
+                    <input type='text' className='form-control' placeholder='End destination ' />
+                  </div>
+                  <div className='input-group mb-3'>
+                    <input type='number' className='form-control' placeholder='Quantity' />
+                    <div className='input-group-append'>
+                      <select className='btn btn-secondary'>
+                        <option selected>Qty</option>
+                      </select>
+                      {/*<button className='btn btn-secondary dropdown-toggle' type='button' id='anyid' aria-haspopup='true' aria-expanded='false'>
+                        Qty
+                      </button>*/}
+                    </div>
                   </div>
                   <div className='form-group'>
-                  <input type='number' className='form-control' placeholder='Quantity' />
-                  <span>
-                    <button className='btn btn-secondary dropdown-toggle' type='button' id='anyid' aria-haspopup='true' aria-expanded='false'>
-                      Qty
-                    </button>
-                  </span>
-                </div>
-                  <div className='form-group'>
-                  <label class="form-control">Price</label>
+                    <label class="form-control">Price:</label>
                   </div>
                 </form>
               </div>
