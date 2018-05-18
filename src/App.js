@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import Map from './map'
+
 
 class App extends Component {
   render() {
@@ -45,7 +47,9 @@ class App extends Component {
             </div>
           </div>
           <div className='col-md-6'>
-            <iframe
+          <Map />
+          {/*<div id='map' style={{width: '400px', height: '300px'}}></div>*/}
+            {/*<iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255344.55326607867!2d32.45903562062639!3d0.3133717662957107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc0f9d74b39b%3A0x4538903dd96b6fec!2sKampala!5e0!3m2!1sen!2sug!4v1526487263715"
               width="800" height="500" frameborder="0" style={{border:0}} allowfullscreen></iframe>
 
