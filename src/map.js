@@ -32,7 +32,7 @@ class Map extends Component {
           <Marker 
            latitude= {0.299861}
            longitude= {32.613174}>
-            <i class="fas fa-map-marker-alt fa-2x"></i>
+           <i class="fas fa-map-pin"></i>
           </Marker>
           
           <Marker 
