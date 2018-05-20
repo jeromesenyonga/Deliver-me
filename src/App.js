@@ -3,7 +3,11 @@ import './App.css';
 import Map from './map'
 
 
+
 class App extends Component {
+  state = {
+    location:''
+  }
   render() {
     return (
       <div className='container-fluid'>
@@ -23,7 +27,10 @@ class App extends Component {
               <div className='offset-md-1 col-md-10'>
                 <form>
                   <div className='form-group'>
-                    <input type='text' className='form-control' placeholder='Pick up location ' />
+                    <input type='text' className='form-control' placeholder='Pick up location ' onChange={(location)=>{
+                      //console.log(location.target.value)
+                      this.setState()
+                    }}  />
                   </div>
                   <div className='form-group'>
                     <input type='text' className='form-control' placeholder='End destination ' />
@@ -33,6 +40,10 @@ class App extends Component {
                     <div className='input-group-append'>
                       <select className='btn btn-secondary'>
                         <option selected>Qty</option>
+                        <option href="#">KG</option>
+                        <option href="#">G</option>
+                        <option href="#">P</option>
+                        <option href="#">MG</option>
                       </select>
                       {/*<button className='btn btn-secondary dropdown-toggle' type='button' id='anyid' aria-haspopup='true' aria-expanded='false'>
                         Qty
