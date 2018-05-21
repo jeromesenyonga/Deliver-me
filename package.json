@@ -6,6 +6,7 @@
     "@google/maps": "^0.4.6",
     "@mapbox/mapbox-gl-geocoder": "^2.2.0",
     "city-to-coords": "^1.1.0",
+    "geocoder": "^0.2.3",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-map-gl": "^3.2.7",
