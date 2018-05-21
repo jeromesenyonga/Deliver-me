@@ -18,6 +18,7 @@ class Map extends Component {
 
   render() {
   //console.log(this.props.pickUpLocation)
+  //console.log(this.props.deliveryPoint)
     return (
       <ReactMapGL
         {...this.state.viewport}
@@ -28,13 +29,13 @@ class Map extends Component {
           <Marker 
            latitude= {this.props.pickUpLocation.lat}
            longitude= {this.props.pickUpLocation.lng}>
-           <i class="fas fa-map-pin fa-2x"></i>
+           <i className="fas fa-map-pin fa-2x"></i>
           </Marker>
           
           <Marker 
-           latitude= {0.260611}
-            longitude= {32.635383}>
-           <i class="fas fa-map-marker-alt fa-2x"></i>
+           latitude= {this.props.deliveryPoint.lat}
+           longitude= {this.props.deliveryPoint.lng}>
+           <i className="fas fa-map-marker-alt fa-2x"></i>
           </Marker>
       
       </ReactMapGL>
