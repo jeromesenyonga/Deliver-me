@@ -55,7 +55,7 @@ class App extends Component {
                     
                   </div>
                   <div className='form-group'>
-                    <input type='text' className='form-control' placeholder='End destination: '
+                    <input type='text' className='form-control' placeholder='Destination Point: '
                     onChange={(destination)=>{
                       //console.log('destin')
                       this.setState({stop:destination.target.value})
